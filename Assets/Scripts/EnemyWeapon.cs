@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class EnemyWeapon : MonoBehaviour
+[System.Serializable]
+public class EnemyWeapon
 {
     public string name = "Knife";
     public int damage = 5;
