@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Nicholas Reynolds\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Nicholas Reynolds\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_GD1 - Grayboxing.868961030.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Nicholas Reynolds\GD1 - Grayboxing" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="Editor" t="Include">
+            <e p="TransformInspector.cs" t="Include" />
+          </e>
+        </e>
+        <e p="External" t="Include">
+          <e p="FirstPersion AIO Pack" t="Include">
+            <e p="DemoScene" t="Include">
+              <e p="MiscScripts" t="Include">
+                <e p="Doors.cs" t="Include" />
+              </e>
+              <e p="Working Materials" t="Include">
+                <e p="GlassBumpedDistort.shader" t="Include" />
+              </e>
+            </e>
+            <e p="FirstPersonAIO" t="Include">
+              <e p="FirstPersonAIO.cs" t="Include" />
+            </e>
+            <e p="README.txt" t="Include" />
+          </e>
+          <e p="Retrowave" t="Include">
+            <e p="HdrUnlit.shader" t="Include" />
+            <e p="ModuloMove.cs" t="Include" />
+            <e p="Random.cginc" t="Include" />
+            <e p="Retrowave.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GD1 - Grayboxing.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
