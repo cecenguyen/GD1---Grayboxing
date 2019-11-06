@@ -16,7 +16,8 @@ public class ItemPickup : Interactable
 
         //TODO: Effect of item
 
-        Destroy(gameObject);
+        if(Inventory.instance.Add(item))
+            Destroy(gameObject);
     }
 
     void Effect()
