@@ -6,12 +6,14 @@ public class GameManager : MonoBehaviour
     static Player player;
     static Dictionary<string, Enemy> enemies = new Dictionary<string, Enemy>();
 
+    #region Singleton
     public static GameManager instance;
 
     void Awake()
     {
         instance = this;
     }
+    #endregion
 
     public static void RegisterPlayer(Player p)
     {
