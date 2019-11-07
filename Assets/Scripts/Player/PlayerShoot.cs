@@ -6,8 +6,12 @@ public class PlayerShoot : MonoBehaviour
     private Camera camera;
     [SerializeField]
     private LayerMask mask;
-
+    
+    [Header("Weapon")]
     public PlayerWeapon weapon;
+
+    public GameObject bullet_prefab;
+    public Transform fire_point;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +34,11 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
-        //Store info of what we hit when the projectile hit
+        GameObject bullet_object = (GameObject)Instantiate(bullet_prefab, fire_point.position, fire_point.rotation);
+        Bullet bullet = bullet_object.GetComponent<Bullet>();
+        bullet.SetDirection(camera.transform.forward);
+        bullet.SetDamage(weapon.damage);
+        /*//Store info of what we hit when the projectile hit
         RaycastHit hit;
 
         //Raycast syntax: origin, direction, hitinfo, maxdistance, what we should hit
@@ -42,7 +50,7 @@ public class PlayerShoot : MonoBehaviour
             {
                 EnemyShot(hit.collider.name, weapon.damage);
             }
-        }
+        }*/
     }   
 
     void EnemyShot(string name, int damage)

@@ -94,6 +94,10 @@ public class Enemy : MonoBehaviour
         if (controller != null)
             controller.enabled = false;
 
+        EnemyRangeController range_controller = GetComponent<EnemyRangeController>();
+        if (range_controller != null)
+            range_controller.enabled = false;
+
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         if (agent != null)
             agent.enabled = false;
