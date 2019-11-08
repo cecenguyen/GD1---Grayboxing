@@ -4,8 +4,6 @@ public class PlayerShoot : MonoBehaviour
 {
     [SerializeField]
     private Camera camera;
-    [SerializeField]
-    private LayerMask mask;
     
     [Header("Weapon")]
     public PlayerWeapon weapon;
@@ -36,7 +34,7 @@ public class PlayerShoot : MonoBehaviour
     {
         GameObject bullet_object = (GameObject)Instantiate(bullet_prefab, fire_point.position, fire_point.rotation);
         Bullet bullet = bullet_object.GetComponent<Bullet>();
-        bullet.SetDirection(camera.transform.forward);
+        bullet.SetDirection(fire_point.forward);
         bullet.SetDamage(weapon.damage);
         /*//Store info of what we hit when the projectile hit
         RaycastHit hit;
@@ -52,13 +50,4 @@ public class PlayerShoot : MonoBehaviour
             }
         }*/
     }   
-
-    void EnemyShot(string name, int damage)
-    {
-        Debug.Log(name + " has been shot");
-
-        Enemy enemy = GameManager.GetEnemy(name);
-        if(enemy.isAlive == true)
-            enemy.TakeDamage(damage);
-    }
 }
