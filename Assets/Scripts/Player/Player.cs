@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
             TakeDamage(9999);   //Instant Kill
         }
     }
+
     public void Setup()
     {
         wasEnabled = new bool[disableOnDeath.Length];
@@ -36,6 +37,19 @@ public class Player : MonoBehaviour
             wasEnabled[i] = disableOnDeath[i].enabled;
 
         SetDefault();
+    }
+
+    public void Heal(int heal)
+    {
+        if (cur_hp <= max_hp - heal)
+            cur_hp += heal;
+        else
+            cur_hp = cur_hp + (max_hp - cur_hp);
+    }
+
+    public float GetHealthPct()
+    {
+        return (float)cur_hp / max_hp;
     }
 
     public void TakeDamage(int damage)

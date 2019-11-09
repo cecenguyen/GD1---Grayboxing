@@ -191,50 +191,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1192540273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725613388298145344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af647c9d01da63243b6919b652f38381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon:
-    name: Pistol
-    damage: 10
-    fire_rate: 1
-  bullet_prefab: {fileID: 8781268082786215964, guid: 00a3aebd620cc5f4dbfda10ddd033b80,
-    type: 3}
-  fire_point: {fileID: 3510348097091823868}
---- !u!114 &8046781267601095105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725613388298145344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b69cd35926a7e4b4d8c9003aa5a7861c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 5
-  default_radius: 5
-  chasing_radius: 15
-  detected: 0
-  target: {fileID: 0}
-  agent: {fileID: 0}
-  patrol_points:
-  - {fileID: 0}
-  - {fileID: 0}
-  shoot_radius: 10
-  player:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &1068414465992582470
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +269,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1192540273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725613388298145344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af647c9d01da63243b6919b652f38381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Pistol
+    damage: 10
+    fire_rate: 1
+  bullet_prefab: {fileID: 8781268082786215964, guid: 00a3aebd620cc5f4dbfda10ddd033b80,
+    type: 3}
+  fire_point: {fileID: 3510348097091823868}
+--- !u!114 &8046781267601095105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725613388298145344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69cd35926a7e4b4d8c9003aa5a7861c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  default_radius: 5
+  chasing_radius: 15
+  detected: 0
+  target: {fileID: 0}
+  agent: {fileID: 0}
+  patrol_points:
+  - {fileID: 0}
+  - {fileID: 0}
+  shoot_radius: 10
+  player:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &3978965222168381722
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +498,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2054f47e331c568498daef1aec4a427f, type: 2}
+    - target: {fileID: 4000010808836891, guid: 4a9fc9a6986ba45e9b9053544e364230, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1127369262652870883, guid: 4a9fc9a6986ba45e9b9053544e364230, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a9fc9a6986ba45e9b9053544e364230, type: 3}

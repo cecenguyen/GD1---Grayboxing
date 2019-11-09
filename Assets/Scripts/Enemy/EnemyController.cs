@@ -7,7 +7,6 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField]
     public float radius = 10f;
-    public float default_radius = 10f;
     public float chasing_radius = 15f;
     public bool detected = false;
 
@@ -47,6 +46,10 @@ public class EnemyController : MonoBehaviour
         else if (distance < chasing_radius && detected == true)
         {
             agent.SetDestination(target.position);
+            FacePlayer();
+        }
+        else if (distance > chasing_radius)
+        {
             Invoke("Idle", 4);
         }
 

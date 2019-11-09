@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static Player player;
+    static public Player player;
     static Dictionary<string, Enemy> enemies = new Dictionary<string, Enemy>();
     static Dictionary<string, EnemyRange> rangeEnemies = new Dictionary<string, EnemyRange>();
 

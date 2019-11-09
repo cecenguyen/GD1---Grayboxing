@@ -6,13 +6,14 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField]
     private int max_hp = 100;
-    [SerializeField]
-    private float alert_time = 200000;
 
+    private float alert_radius = 15f;
+    private float alert_time = 5f;
     private int cur_hp;
     public string enemy_name = "Ratty";
 
     private EnemyController controller;
+    private EnemyGraphic graphic;
 
     [SerializeField]
     private Behaviour[] disableOnDeath;
@@ -28,6 +29,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         controller = GetComponent<EnemyController>();
+        graphic = GetComponent<EnemyGraphic>();
     }
 
     public void Setup()
@@ -48,32 +50,37 @@ public class Enemy : MonoBehaviour
             return;
         }
 
+        graphic.blood.Play();
+
         cur_hp -= damage;
         Debug.Log("Enemy now has " + cur_hp + " health");
+
         Alert();
+
         if (cur_hp <= 0)
             EnemyKilled(transform.name);
     }
 
     public void Alert()
     {
-        controller.radius = 15f;
-        Invoke("Idle", 5);
-    }
-
-    public void Idle()
-    {
-        controller.radius = controller.default_radius;
+        controller.detected = true;
     }
 
     public void EnemyKilled(string id)
     {
         isAlive = false;
+        graphic.explode.Play();
         //Destroy(this.gameObject);
         Disable();
 
         Debug.Log(transform.name + " is DEAD");
-        //GameManager.UnregisterEnemy(id);
+        GameManager.UnregisterEnemy(id);
+        Invoke("Destroy", 3);
+    }
+
+    public void Destroy()
+    {
+        Destroy(this.gameObject);
     }
 
     #region disablecomponent
@@ -101,7 +108,6 @@ public class Enemy : MonoBehaviour
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         if (agent != null)
             agent.enabled = false;
-
     }
     #endregion
 
