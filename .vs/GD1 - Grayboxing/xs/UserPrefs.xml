@@ -1,25 +1,18 @@
 ﻿<Properties StartupConfiguration="{987824A6-9908-FC64-9B00-11CC51047E29}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gizmo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
     <Files>
       <File FileName="Assets/Scripts/Enemy.cs" Line="54" Column="25" />
       <File FileName="Assets/Scripts/EnemyAttack.cs" />
       <File FileName="Assets/Scripts/EnemyController.cs" />
-      <File FileName="Assets/Scripts/EnemySetup.cs" />
-      <File FileName="Assets/Scripts/EnemyWeapon.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
-      <File FileName="Assets/Scripts/Player.cs" />
-      <File FileName="Assets/Scripts/PlayerSetup.cs" />
-      <File FileName="Assets/Scripts/PlayerShoot.cs" />
-      <File FileName="Assets/Scripts/PlayerWeapon.cs" />
-      <File FileName="Assets/Gizmo.cs" Line="8" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GD1 - Grayboxing" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
-              <Node name="Gizmo.cs" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemy.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -28,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d315ddd3-c7ab-4639-bc5c-433020e69d73" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="61d99b6b-fd59-42c4-bf4f-5ec31e7e15eb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
