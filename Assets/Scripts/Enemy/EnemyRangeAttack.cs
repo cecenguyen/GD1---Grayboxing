@@ -8,24 +8,26 @@ public class EnemyRangeAttack : MonoBehaviour
 
     public GameObject bullet_prefab;
     public Transform fire_point;
+    public Animator animator;
 
-    private float next_time_to_fire = 0f;
+    public float next_time_to_fire = 0f;
 
-    public void RangeAttack()
+    void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
+
+    public virtual void RangeAttack()
     {
         if (Time.time >= next_time_to_fire)
         {
             next_time_to_fire = Time.time + weapon.fire_rate;
+
+            animator.SetTrigger("Attack");
             GameObject bullet_object = (GameObject)Instantiate(bullet_prefab, fire_point.position, fire_point.rotation);
             EnemyBullet bullet = bullet_object.GetComponent<EnemyBullet>();
             bullet.SetDirection(fire_point.forward);
             bullet.SetDamage(weapon.damage);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -2,7 +2,7 @@
 
 public class Interactable : MonoBehaviour
 {
-    public float radius = 3f;
+    public float radius = 1f;
 
     bool interacted = false;
     void OnDrawGizmosSelected()

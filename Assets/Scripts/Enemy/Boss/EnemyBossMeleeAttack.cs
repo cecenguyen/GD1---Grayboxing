@@ -1,0 +1,35 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyBossMeleeAttack : MonoBehaviour
+{
+    public EnemyWeapon weapon;
+    private Player player;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponentInChildren<Animator>(); 
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            Debug.Log(transform.name + " is hitting the Player");
+            MeleeAttack();
+        }
+    }
+
+    void MeleeAttack()
+    {
+        animator.SetTrigger("Attack");
+
+        if (player == null)
+            player = GameManager.GetPlayer();
+
+        if (player.isAlive == true)
+            player.TakeDamage(weapon.damage);
+    }
+}

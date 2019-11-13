@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField]
@@ -10,6 +11,7 @@ public class PlayerShoot : MonoBehaviour
     public GameObject bullet_prefab;
     public Transform fire_point;
     private WeaponGraphic graphic;
+    private Animator animator;
 
     private float next_time_to_fire = 0f;
     // Start is called before the first frame update
@@ -21,6 +23,7 @@ public class PlayerShoot : MonoBehaviour
             this.enabled = false;
         }
         graphic = GetComponent<WeaponGraphic>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1") && Time.time >= next_time_to_fire)
         {
+            animator.SetTrigger("Shoot");
             next_time_to_fire = Time.time + weapon.fire_rate;
             Shoot();
         }

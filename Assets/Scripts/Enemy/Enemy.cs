@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
 
     private EnemyController controller;
     private EnemyGraphic graphic;
+    private Animator animator;
 
     [SerializeField]
     private Behaviour[] disableOnDeath;
@@ -30,6 +31,7 @@ public class Enemy : MonoBehaviour
     {
         controller = GetComponent<EnemyController>();
         graphic = GetComponent<EnemyGraphic>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void Setup()
@@ -70,7 +72,7 @@ public class Enemy : MonoBehaviour
     {
         isAlive = false;
         graphic.explode.Play();
-        //Destroy(this.gameObject);
+        animator.SetTrigger("Die");
         Disable();
 
         Debug.Log(transform.name + " is DEAD");

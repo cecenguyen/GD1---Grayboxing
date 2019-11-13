@@ -14,14 +14,17 @@ public class ItemPickup : Interactable
     {
         Debug.Log("Picking up " + item.name);
 
-        //TODO: Effect of item
 
         if(Inventory.instance.Add(item))
             Destroy(gameObject);
     }
 
-    void Effect()
+    void Start()
     {
-
+    }
+    
+    void Update()
+    {
+        transform.Rotate(Vector3.up * 30f * Time.deltaTime);
     }
 }

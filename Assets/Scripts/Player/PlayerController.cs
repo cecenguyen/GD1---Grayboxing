@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
@@ -14,17 +15,13 @@ public class PlayerController : MonoBehaviour
     private static int frame = 0;
 
     private PlayerMotor motor;
-    //Reset frame when touch ground
-    void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject.tag == "Ground")
-            frame = 0;
-    }
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         motor = GetComponent<PlayerMotor>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +38,9 @@ public class PlayerController : MonoBehaviour
 
         //Calculating velocity base on horizontal movement and verticle movement
         Vector3 vel = (move_hor + move_ver).normalized * speed;
+
+        //Animate movement
+        animator.SetFloat("Speed", z_move, .1f, Time.deltaTime);
 
         //Actual movement
         motor.Move(vel);
@@ -71,5 +71,12 @@ public class PlayerController : MonoBehaviour
             frame++;
         }
         motor.Jump(jump);
+    }
+
+    //Reset frame when touch ground
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Ground")
+            frame = 0;
     }
 }

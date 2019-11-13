@@ -4,6 +4,12 @@ public class EnemyAttack : MonoBehaviour
 {
     public EnemyWeapon weapon;
     private Player player;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponentInChildren<Animator>(); 
+    }
 
     void OnCollisionEnter(Collision col)
     {
@@ -16,17 +22,12 @@ public class EnemyAttack : MonoBehaviour
 
     void MeleeAttack()
     {
+        animator.SetTrigger("Attack");
+
         if (player == null)
             player = GameManager.GetPlayer();
 
         if (player.isAlive == true)
             player.TakeDamage(weapon.damage);
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
