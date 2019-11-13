@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 8ad087c084b4a7c4c9cb6c9781ab5d26
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: -7120468056303298560
+    second: Cat-Rig|Rest
+  - first:
+      74: 6605582205484515154
+    second: Cat-Rig|Running
+  - first:
+      74: 6885177303708959247
+    second: Cat-Rig|Shooting
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: <Root Transform>
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cat-Rig|Rest
+      takeName: Cat-Rig|Rest
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cat-Rig|Running
+      takeName: Cat-Rig|Running
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cat-Rig|Shooting
+      takeName: Cat-Rig|Shooting
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Cat_Animation(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cat
+      parentName: Cat_Animation(Clone)
+      position: {x: 0.026283033, y: 4.958362, z: 1.2933486}
+      rotation: {x: 0.000000015454313, y: -0.70710677, z: 0.000000015454312, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cat-Rig
+      parentName: Cat_Animation(Clone)
+      position: {x: 0.018401504, y: -0.06228447, z: -0.123680115}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Back
+      parentName: Cat-Rig
+      position: {x: -0.00016820178, y: -0.0033054852, z: 0.035088446}
+      rotation: {x: 0.30463618, y: 0.000000002111633, z: 0.0000000066022237, w: 0.9524688}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: Back.001
+      parentName: Back
+      position: {x: -0, y: 0.011272316, z: 0.0000000010430813}
+      rotation: {x: 0.2275022, y: -0.00000011558571, z: -0.000000026682027, w: 0.9737776}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: Back.002
+      parentName: Back.001
+      position: {x: 2.9160675e-13, y: 0.01007821, z: 3.3812564e-10}
+      rotation: {x: 0.27256387, y: -0.0000032112275, z: -0.0000009747085, w: 0.96213776}
+      scale: {x: 1, y: 0.99999964, z: 0.99999964}
+    - name: Back.003
+      parentName: Back.002
+      position: {x: 1.3551471e-12, y: 0.011460332, z: -1.7813398e-10}
+      rotation: {x: 0.00000009562562, y: 0.99950004, z: 0.031620353, w: -0.0000038883336}
+      scale: {x: 1.0000017, y: 0.9999995, z: 1.0000015}
+    - name: Head
+      parentName: Back.003
+      position: {x: 1.4254908e-11, y: 0.010236855, z: 3.6922243e-10}
+      rotation: {x: -0.04043222, y: -1.3142197e-10, z: -0.000000035045947, w: 0.9991823}
+      scale: {x: 0.99999917, y: 1.0000001, z: 0.9999995}
+    - name: Head.001
+      parentName: Head
+      position: {x: -5.1618085e-12, y: 0.012932916, z: 1.4570503e-10}
+      rotation: {x: 0.00000008641428, y: -0.9614242, z: -0.27507034, w: -0.0000005318936}
+      scale: {x: 1.0000002, y: 0.9999994, z: 1.0000001}
+    - name: Head.002
+      parentName: Head.001
+      position: {x: 1.2729657e-11, y: 0.01265971, z: -0.0000000024930948}
+      rotation: {x: -0.019660411, y: 0.00000011496026, z: 6.8813216e-10, w: 0.99980676}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Head.002_end
+      parentName: Head.002
+      position: {x: -0, y: 0.008704542, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand.L
+      parentName: Back.002
+      position: {x: -0.003430747, y: 0.01119679, z: 0.00048933283}
+      rotation: {x: 0.7715407, y: -0.6327192, z: -0.04142019, w: 0.051727947}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000013}
+    - name: Hand.L.001
+      parentName: Hand.L
+      position: {x: 0.0000000021117739, y: 0.009059588, z: -7.4505804e-11}
+      rotation: {x: -0.17155443, y: 0.4899293, z: 0.07126142, w: -0.8517395}
+      scale: {x: 1, y: 1.0000011, z: 1.0000012}
+    - name: Hand.L.002
+      parentName: Hand.L.001
+      position: {x: -0.0000000010430813, y: 0.008903062, z: 0.0000000040978194}
+      rotation: {x: 0.005183218, y: 0.015439803, z: 0.1077256, w: 0.9940473}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Hand.L.003
+      parentName: Hand.L.002
+      position: {x: 0.000000001117587, y: 0.009911382, z: -0.0000000036042183}
+      rotation: {x: 0.024692569, y: -0.022654422, z: -0.029899132, w: -0.9989911}
+      scale: {x: 1, y: 1.0000011, z: 1.0000007}
+    - name: Hand.L.003_end
+      parentName: Hand.L.003
+      position: {x: -0, y: 0.0044762897, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand.R
+      parentName: Back.002
+      position: {x: 0.0037671567, y: 0.01119679, z: 0.0004892832}
+      rotation: {x: 0.771541, y: 0.6327196, z: 0.041414812, w: 0.05172355}
+      scale: {x: 1.0000008, y: 1.0000012, z: 1.0000018}
+    - name: Hand.R.001
+      parentName: Hand.R
+      position: {x: -0.0000000026775524, y: 0.00905959, z: -1.4901161e-10}
+      rotation: {x: -0.1715546, y: -0.48992926, z: -0.07126153, w: -0.85173947}
+      scale: {x: 0.99999964, y: 1.0000005, z: 1.0000001}
+    - name: Hand.R.002
+      parentName: Hand.R.001
+      position: {x: 8.9406965e-10, y: 0.008903062, z: -0.0000000025704503}
+      rotation: {x: 0.0051832777, y: -0.015439892, z: -0.107725464, w: 0.9940473}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1.0000002}
+    - name: Hand.R.003
+      parentName: Hand.R.002
+      position: {x: -8.5681673e-10, y: 0.00991138, z: -0.0000000013038516}
+      rotation: {x: 0.024693405, y: 0.022654245, z: 0.029900301, w: -0.9989911}
+      scale: {x: 1.0000001, y: 1.0000012, z: 1.0000005}
+    - name: Hand.R.003_end
+      parentName: Hand.R.003
+      position: {x: -0, y: 0.0044762897, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tail
+      parentName: Back
+      position: {x: -0, y: -0.0000000011920929, z: 0.0000000011920929}
+      rotation: {x: -0.00000019305784, y: 0.1147538, z: 0.99339396, w: -0.000000023001741}
+      scale: {x: 1.0000007, y: 1.0000001, z: 0.99999493}
+    - name: Tail.001
+      parentName: Tail
+      position: {x: -2.4101608e-13, y: 0.012266166, z: 0.0000000012575934}
+      rotation: {x: 0.12817627, y: 0.00000047311678, z: 0.00000011024811, w: 0.99175143}
+      scale: {x: 1.0000017, y: 1.000001, z: 1.0000007}
+    - name: Tail.002
+      parentName: Tail.001
+      position: {x: 1.7411139e-12, y: 0.014654667, z: 0.0000000020140516}
+      rotation: {x: 0.4006151, y: -0.00000043818318, z: 0.0000003425855, w: 0.9162464}
+      scale: {x: 1.0000002, y: 1.000001, z: 0.99999917}
+    - name: Tail.003
+      parentName: Tail.002
+      position: {x: 2.158913e-12, y: 0.01209011, z: -0.000000002169674}
+      rotation: {x: 0.31572193, y: -0.00000014039402, z: 0.000000077065984, w: 0.94885176}
+      scale: {x: 0.99999976, y: 1.000002, z: 0.99999785}
+    - name: Tail.003_end
+      parentName: Tail.003
+      position: {x: -0, y: 0.009221607, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg.L
+      parentName: Back
+      position: {x: -0.0043790815, y: 0.001103844, z: -0.0020156652}
+      rotation: {x: -0.8323273, y: -0.004262615, z: 0.096649766, w: 0.5457765}
+      scale: {x: 0.9999999, y: 1.0000006, z: 1.0000001}
+    - name: Leg.L.001
+      parentName: Leg.L
+      position: {x: -3.352761e-10, y: 0.009537243, z: 0.0000000025721965}
+      rotation: {x: 0.1751706, y: -0.060774464, z: 0.04896085, w: -0.98144007}
+      scale: {x: 0.9999999, y: 1.0000007, z: 1.0000008}
+    - name: Leg.L.002
+      parentName: Leg.L.001
+      position: {x: -6.149939e-10, y: 0.010866553, z: 1.6402595e-11}
+      rotation: {x: 0.01922973, y: 0.9959315, z: -0.08543187, w: -0.02126083}
+      scale: {x: 1.0000015, y: 1.0000015, z: 1.0000002}
+    - name: Leg.L.003
+      parentName: Leg.L.002
+      position: {x: 5.7742e-10, y: 0.011876529, z: -9.458745e-11}
+      rotation: {x: -0.03502233, y: -0.8499491, z: 0.5252422, w: 0.021923268}
+      scale: {x: 1.0000001, y: 1.0000012, z: 1.0000011}
+    - name: Leg.L.003_end
+      parentName: Leg.L.003
+      position: {x: -0, y: 0.008899052, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg.R
+      parentName: Back
+      position: {x: 0.0047154855, y: 0.001103844, z: -0.0020156652}
+      rotation: {x: -0.8323273, y: 0.0042626653, z: -0.09664976, w: 0.5457765}
+      scale: {x: 0.9999999, y: 1.000001, z: 1.0000004}
+    - name: Leg.R.001
+      parentName: Leg.R
+      position: {x: 3.352761e-10, y: 0.009537243, z: 0.0000000025721965}
+      rotation: {x: 0.17517044, y: 0.060774494, z: -0.04896083, w: -0.98144007}
+      scale: {x: 0.9999998, y: 1.0000005, z: 1.0000005}
+    - name: Leg.R.002
+      parentName: Leg.R.001
+      position: {x: 6.149939e-10, y: 0.010866553, z: 1.6402595e-11}
+      rotation: {x: -0.019229703, y: 0.99593157, z: -0.08543202, w: 0.02126079}
+      scale: {x: 1.0000017, y: 1.0000015, z: 1.0000005}
+    - name: Leg.R.003
+      parentName: Leg.R.002
+      position: {x: -5.7742e-10, y: 0.011876529, z: -9.458745e-11}
+      rotation: {x: 0.03502235, y: -0.84994906, z: 0.52524227, w: -0.021923244}
+      scale: {x: 1.0000001, y: 1.000001, z: 1.0000012}
+    - name: Leg.R.003_end
+      parentName: Leg.R.003
+      position: {x: -0, y: 0.008899052, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

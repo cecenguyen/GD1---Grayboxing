@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Interactable
+  - Ground
+  - Gun
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -15,10 +19,10 @@ TagManager:
   - 
   - 
   - Postprocessing
-  - 
-  - 
-  - 
-  - 
+  - Interactable
+  - Player
+  - Obstacle
+  - Arena
   - 
   - 
   - 
